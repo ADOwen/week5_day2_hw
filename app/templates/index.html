@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Welcome to My REALLY COOL Tech Store</h1>
+<h2>We've got it all:</h2>
+<ul>
+    {% for item in my_list %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+{% endblock content %}
